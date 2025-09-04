@@ -11,6 +11,9 @@ RUN apt-get install -y nodejs
 # Installing Git
 RUN apt-get install git -y
 
+# installing ffmpeg
+RUN apt-get install ffmpeg -y
+
 WORKDIR /home/app   
 
 COPY script.js script.js
